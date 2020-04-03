@@ -1,0 +1,77 @@
+
+  <ion-toolbar color="warning" >
+<img style="margin-left: 8px;" src="../../../assets/logo@3xcópia.png">
+    <ion-buttons slot="end">
+      <ion-button style="border: solid 1px #dcdce6 ; border-radius: 7px; box-shadow: 0 0 100px rgba(0,0,0, 0.1); "  >
+        <fa-icon slot="icon-only"  style="color:#304483; font-size: 21px;"  slot="start" [icon]="faPowerOff"></fa-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+<ion-content>
+  <p class="ion-text-center">
+    <ion-chip style="background-color: #dcdce600;" >
+      <ion-icon style="color:#304483; font-size: 23px;"  ios="person-circle-outline" md="person-circle-sharp"></ion-icon>
+      <ion-label>RODRIGO SOARES </ion-label>
+    </ion-chip>
+    <br>
+    <ion-icon style="color:#304483; font-size: 23px;" ios="chevron-down-outline" md="chevron-down-sharp"></ion-icon>
+  </p>
+
+<br><br><br>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+   <ion-row style="width: 90%;" >
+     <ion-col style="width: 130px; height: 90px; background-color:#304483; ">
+      <fa-icon   style="color:#ffffff; font-size: 21px;"   [icon]="faBarcode"></fa-icon>
+       <p style="font-size: 14px; color:#ffff" > Ler QR code de acesso</p>
+     </ion-col>
+     <ion-col style="width: 130px; height: 90px; background-color:#304483; ">
+      <fa-icon   style="color:#ffffff; font-size: 21px;"   [icon]="faShareSquare"></fa-icon>
+      <p style="font-size: 14px; color:#ffff" >Digitar codigo de acesso</p>
+    </ion-col>
+    <ion-col style="width: 130px; height: 90px; background-color:#304483; ">
+      <fa-icon   style="color:#ffffff; font-size: 21px;"   [icon]="faUserLock"></fa-icon>
+      <p style="font-size: 14px; color:#ffff" >Digitar Usuario e senha</p>
+    </ion-col>
+   </ion-row>
+    </ion-slide>
+    <ion-slide>
+      <ion-row style="width: 90%;">
+        <ion-col style="width: 130px; height: 90px; background-color:#304483; ">
+          <fa-icon   style="color:#ffffff; font-size: 21px;"   [icon]="faSignal"></fa-icon>
+          <p style="font-size: 14px; color:#ffff" >Entrar Offline</p>
+        </ion-col>
+        <ion-col style="width: 130px; height: 90px; background-color:#304483; ">
+          <fa-icon   style="color:#ffffff; font-size: 21px;"   [icon]="faUserEdit"></fa-icon>
+          <p style="font-size: 14px; color:#ffff" >Apelido</p>
+        </ion-col>
+        <ion-col style="width: 130px; height: 90px; background-color:#304483; ">
+          <fa-icon   style="color:#ffffff; font-size: 21px;"   [icon]="faComment"></fa-icon>
+          <p style="font-size: 14px; color:#ffff" >Suporte</p>
+        </ion-col>
+      </ion-row>
+       </ion-slide>
+  </ion-slides>
+
+</ion-content>
+
+<ion-footer class="ion-no-border" color="warning">
+  <ion-item>
+    <ion-label>
+      Idioma
+    </ion-label>
+    <fa-icon slot="icon-only"  style="color:#304483; font-size: 21px;"  slot="end" [icon]="faEdit"></fa-icon>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      Endpoint online
+    </ion-label>
+    <fa-icon slot="icon-only"  style="color:#304483; font-size: 21px;"  slot="end" [icon]="faEdit"></fa-icon>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+      Desenvolvido por cid tech compartilha
+    </ion-label>
+    <fa-icon slot="icon-only"  style="color:#304483; font-size: 21px;"  slot="end" [icon]="faShareAlt"></fa-icon>
+  </ion-item>
+</ion-footer>

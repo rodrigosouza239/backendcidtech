@@ -1,0 +1,27 @@
+<ion-content padding >
+  <div id="component">
+    <div class="component2">
+      <p class="ion-text-center" >
+        <img style="width: 300px;" src="../../../assets/Logo.png"><strong><br>
+          <ion-label class="text1" >Soluções Integradas para Gestão de<br> Acesso em Eventos</ion-label>
+        </strong>
+      </p>
+    </div>
+  
+    <div id="input">
+      <br>
+      <br>
+      <p>
+        <ion-label style="font-size: 17px; color:#333; font-weight: 700; font-family: 'Roboto', sans-serif !important ; margin-left: 20px; " position="floating">Faça seu Login</ion-label><strong><br></strong>
+      </p>
+        <ion-item lines="none" style="width: 90%; height: 40px; box-shadow: 0 0 100px rgba(0,0,0, 0.1);  margin-left: 20px;  background-color: rgba(255, 255, 255, 0); border: solid 1px #dcdce6 ; border-radius: 7px; " >
+          <ion-input type="number"  placeholder="Sua ID"></ion-input>
+        </ion-item>
+      <ion-button (click)="login()" class="button">Entrar</ion-button>
+        <p style="margin-left: 20px;" >
+          <fa-icon  style="color:#304483; font-size: 21px;"  slot="start" [icon]="faSignInAlt"></fa-icon>
+          <ion-label (click)="register()" style="margin-left: 10px; font-size: 17px; color:#333; font-weight: 700; font-family: 'Roboto', sans-serif !important ;" >Não tenho cadastro</ion-label>
+        </p>
+    </div>
+  </div>
+</ion-content>
